@@ -33,7 +33,7 @@ const SearchEngine = (): ReactElement => {
 	};
 
 	const handleSubmit = (): void => {
-		dispatch(googleCustomSearch(searchValuve));
+		dispatch(googleCustomSearch(searchValuve.trim()));
 	};
 
 	const handleClear = (): void => {

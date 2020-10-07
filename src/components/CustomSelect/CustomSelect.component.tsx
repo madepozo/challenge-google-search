@@ -16,7 +16,7 @@ type Props = {
 };
 
 const CustomSelect = ({ items, changeHandler, value }: Props): ReactElement => {
-	const wrapperRef = useRef<HTMLDListElement>(null);
+	const wrapperRef = useRef<HTMLDivElement>(null);
 	const [showList, setShowLit] = useState<boolean>(false);
 
 	const handleClickOutside = (evt): void => {

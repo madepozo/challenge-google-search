@@ -4,7 +4,7 @@ import path from 'ramda/src/path';
 import pipe from 'ramda/src/pipe';
 import rgba from 'polished/lib/color/rgba';
 
-export const getColor = (color: string, alpha = 1): string => {
+export const getColor = (color, alpha = 1) => {
 	return pipe(
 		path(['theme', 'color', color]),
 		parseToRgb,
